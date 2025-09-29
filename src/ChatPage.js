@@ -10,6 +10,11 @@ const sampleData = [
     answer: "The temperature is 25°C.",
   },
   { question: "Hi, how are you?", answer: "I am fine, thank you!" },
+  {
+    question: "What are RESTful APIs?",
+    answer:
+      "RESTful APIs are designed around the REST (Representational State Transfer) architecture, which uses HTTP requests to access and manipulate data. They follow a stateless, client-server, cacheable communications protocol.",
+  },
 ];
 
 function getCurrentTime() {
