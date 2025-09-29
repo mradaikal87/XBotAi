@@ -68,7 +68,7 @@ export default function ChatPage() {
     saved.push({ messages, rating, feedbackText, date: new Date() });
     localStorage.setItem("chats", JSON.stringify(saved));
     setHistory(saved);
-    navigate("/history"); 
+    navigate("/history");
   };
 
   const handleSampleClick = (item) => {
@@ -111,7 +111,12 @@ export default function ChatPage() {
             {showHistory && "✖"}
           </span>
         </Link>
-        <h3 className="past">Past Conversations</h3>
+
+        <h3 className="past">
+          <Link to="/history" className="history-link">
+            Past Conversations
+          </Link>
+        </h3>
 
         {history.map((chat, idx) => (
           <div
@@ -168,7 +173,7 @@ export default function ChatPage() {
                       width={30}
                       height={30}
                     />
-                    <span>Soul AI</span> 
+                    <span>Soul AI</span>
                   </div>
                 ) : (
                   <div className="you-message message">
@@ -216,7 +221,7 @@ export default function ChatPage() {
             value={input}
             onChange={(e) => setInput(e.target.value)}
           />
-          <button type="submit">Ask</button> 
+          <button type="submit">Ask</button>
           <button type="button" onClick={handleSave}>
             Save
           </button>

@@ -1,0 +1,19 @@
+.history-chat {
+  padding: 15px 21px;
+}
+.chats-title {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: #000000;
+  padding: 0 15px ;
+}
+.history-msg {
+  padding-left: 30px;
+}
+.history-chat {
+  background: linear-gradient(90deg, #bface2 0%, #d7c7f4 100%);
+  margin: 15px;
+  border-radius: 10px;
+}
