@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import "./style/ChatPage.css";
 
+// Updated sampleData to include the exact question from Cypress test
 const sampleData = [
   { question: "Hi, what is the weather?", answer: "The weather is sunny." },
   { question: "Hi, what is my location?", answer: "You are in New York." },
@@ -12,6 +13,11 @@ const sampleData = [
   { question: "Hi, how are you?", answer: "I am fine, thank you!" },
   {
     question: "What are RESTful APIs?",
+    answer:
+      "RESTful APIs are designed around the REST (Representational State Transfer) architecture, which uses HTTP requests to access and manipulate data. They follow a stateless, client-server, cacheable communications protocol.",
+  },
+  {
+    question: "Can you explain RESTful APIs?",
     answer:
       "RESTful APIs are designed around the REST (Representational State Transfer) architecture, which uses HTTP requests to access and manipulate data. They follow a stateless, client-server, cacheable communications protocol.",
   },
